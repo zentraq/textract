@@ -14,7 +14,7 @@ const (
 
 var (
 	help, version bool
-	img  string
+	img           string
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 	flag.Parse()
 
 	// program sanity check
-	if (help || version || img != "") {
+	if help || version || img != "" {
 		if help {
 			print_usage()
 			return
